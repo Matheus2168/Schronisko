@@ -1,0 +1,106 @@
+body{
+    background: linear-gradient(to bottom, rgb(55, 3, 81), rgba(72, 75, 74, 0.38));
+}
+
+div.header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #71059c, #ff0a5b);
+    border: solid black;
+    border-radius: 10px;
+    -webkit-transition-duration: 10s; /* Safari */
+    transition-duration: 10s;
+}
+div.header:hover{
+    background: linear-gradient(to left, #71059c, #ff0a5b);
+}
+
+.bg{
+    background: linear-gradient(to bottom, rgba(201, 205, 194, 0.41), rgba(72, 75, 74, 0.38));
+}
+
+
+
+button{
+    background-color: #71059c;
+    border: 2px solid #ff0a5b;
+    border-radius: 20px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    /*transition-duration: 0.4s;*/
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff0a5b;
+    border: 2px solid #71059c;
+    color: white;
+}
+
+div.buttonField, div.list{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 60px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+div.list{
+    height: 100%;
+}
+
+a.listTitle{
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+h1{
+    margin-top: 30px;
+    margin-left: 5%;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px gray;
+    font-style: italic;
+}
+
+.pet{
+    border: solid black;
+
+}
+.petName{
+    font-size: 65px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px gray;
+}
+.petDesc{
+    font-size: 30px;
+}
+.petPhoto{
+    display: inline-flex;
+    margin-left: 30%;
+    border:solid black;
+
+}
+
+.center{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.noMargin{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.categories {
+    line-height: 3.5;
+}
+
