@@ -1,10 +1,15 @@
 <!DOCTYPE html >
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <style>
+        body{
+
+        }
+    </style>
     <meta charset="UTF-8"/>
     <title>Schronisko</title>
-    <link href="../static/css/MainStyle.css"
-          th:href="@{/css/MainStyle3.css}"
+    <link href="../static/css/NewStyle.css"
+          th:href="@{/css/NewStyle3.css}"
           rel="stylesheet" media="screen" />
 </head>
 
@@ -19,38 +24,34 @@
 </div>
 
 <div class="buttonField categories bg" >
-    <span> KATEGORIE: </span>
-    <a href="/resetSort"><span> Wszystkie,</span></a>
+    <span class="category"> KATEGORIE: </span>
+    <a href="/resetSort"><span class="category"> Wszystkie,</span></a>
 <span th:each="type : ${types}">
-    <a th:href="'/sort?type='+${type}"><span th:text="${type.PL_TYPE}+','"/></a>
+    <a class="category" th:href="'/sort?type='+${type}"><span th:text="${type.PL_TYPE}+','"/></a>
 </span>
 </div>
 
 <div class="list bg"> <a class="listTitle"> Zwierzaki szukajace domu: </a>
     <table>
-        <tbody>
-        <div class="pet" th:each="pet : ${database}">
-            <tr class="pet">
-            <td class="pet noMargin">
+        <tr class="pet grow" th:each="pet : ${database}">
+            <td class="petImgBorder">
                 <a th:href="@{'/pet?name='+${pet.name}}">
-                    <img width="140" height="100" th:src="${pet.imgSrc}" />
+                    <img class="petImg grow"  th:src="${pet.imgSrc}" />
                 </a>
             </td>
-            <td class="pet noMargin">
+            <td class="petName">
                 <a th:href="@{'/pet?name='+${pet.name}}">
-                    <span th:text="${pet.name}">
+                    <span class="petNameInName" th:text="${pet.name}">
                         PET NAME
                     </span>
                     <br/>
-                    <span th:text="' - '+${#strings.abbreviate(pet.description,30)}">
+                    <span th:text="' - '+${#strings.abbreviate(pet.description,45)}">
                         PET DESCRIPTION$
                     </span>
 
                 </a>
             </td>
             </tr>
-        </div>
-        </tbody>
     </table>
 
 </div>

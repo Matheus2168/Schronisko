@@ -1,0 +1,44 @@
+div{
+    border: solid black;
+    border-radius: 5px;
+    width: 90%;
+    height: 100px;
+    background-color: #baa1ff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+
+}
+
+.buttonField{
+ height: auto;
+}
+
+.list{
+    height: auto;
+}
+
+.listTitle{
+    text-indent: 50px;
+    height: auto;
+    border-bottom: solid 1px black;
+    font-size: 20px;
+}
+
+.pet{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    display: flex;
+    border: solid  3px black;
+    height: 400px;
+    align-items: flex-start;
+    color: black;
+}
+
+.petImg{
+
+    border: solid  1px black;
+}
